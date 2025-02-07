@@ -15,13 +15,27 @@ const puerto = process.env.PORT || 3000;
 //Configurar cors
 app.use(cors());
 
-//Convertir body a objeto js
+//Leer y Convertir el body a objeto js
+app.use(express.json()); //Recibir datos con content-type app/json
+app.use(express.urlencoded({ extended: true })); //form-urlencode
 
 //Crear rutas
+
+const rutas_verb = require("./rutas/verb");
+
+//Cargar rutas
+app.use("/api", rutas_verb);
+{
+  /**Rutas de prueba hardcodeadas */
+}
 app.get("/probando", (req, res) => {
   console.log("Se ha ejecutado el endpoint probando");
 
   return res.status(200).send({});
+});
+
+app.get("/", (req, res) => {
+  return res.status(200).send("<h1>Empezando a crear una api</h1>");
 });
 
 //Crear servidor y escuchar peticiones http
