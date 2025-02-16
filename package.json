@@ -1,11 +1,11 @@
 {
   "name": "english-rest-api",
   "version": "1.0.0",
-  "description": "API Rest with NodeJS, to create a CRUD about to add, verbs",
+  "description": "This is the base to create future Node.js, it could be from courses or project made by myself",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Hugo Maya",
+  "author": "Hugo Loyola Maya",
   "license": "ISC"
 }
