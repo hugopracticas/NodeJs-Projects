@@ -16,3 +16,12 @@ const conexion = async () => {
 module.exports = {
   conexion,
 };
+//Validadores
+
+//Authenticacion, revisar
+
+//Que es una BD de tipo cache ?
+//Memoria cahce tipo redis
+//ventajas, desventajas
+//Memorias de cache
+//colas, que son ?

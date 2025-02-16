@@ -25,6 +25,7 @@ const rutas_verb = require("./rutas/verb");
 
 //Cargar rutas
 app.use("/api", rutas_verb);
+//app.use("/api/phrasalVerbs");
 {
   /**Rutas de prueba hardcodeadas */
 }
