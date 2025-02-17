@@ -1,0 +1,13 @@
+{
+  "index": {
+    "welcome": "Api Bank started",
+    "port": 3800,
+    "serverRuning": "Node.js Server runing on Port"
+  },
+  "dataBase": {
+    "urlBase": "mongodb+srv://",
+    "successConnection": "The connection to the Data Base was success",
+    "errorConnection": "Failed connection",
+    "appName": "Cluster0"
+  }
+}
