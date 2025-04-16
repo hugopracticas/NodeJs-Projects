@@ -4,8 +4,17 @@
   "description": "This is the base to create future Node.js, it could be from courses or project made by myself",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "Hugo Loyola Maya",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "nodemon": "^3.1.9",
+    "validator": "^13.15.0"
+  }
 }
