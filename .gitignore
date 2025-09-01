@@ -1,2 +1,24 @@
-# Ignora la carpeta node_modules
-node_modules
+# Dependencias
+/node_modules
+
+# Archivos de entorno
+.env
+
+# Archivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Otros archivos generados
+/dist
+/build
+/coverage
+
+# Archivos de configuración de IDE (opcional, si usas VS Code)
+.vscode/

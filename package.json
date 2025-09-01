@@ -4,7 +4,7 @@
   "description": "API Rest with NodeJS, to create a CRUD about to add, verbs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --detectOpenHandles --forceExit",
     "start": "nodemon index.js"
   },
   "author": "Hugo Maya",
@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "dotenv": "^16.4.7",
-    "nodemon": "^3.1.9"
+    "jest": "^30.0.3",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.1.1"
   }
 }

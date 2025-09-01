@@ -29,15 +29,17 @@ app.use("/api", rutas_verb);
 {
   /**Rutas de prueba hardcodeadas */
 }
-app.get("/probando", (req, res) => {
-  console.log("Se ha ejecutado el endpoint probando");
+// app.get("/probando", (req, res) => {
+//   console.log("Se ha ejecutado el endpoint probando");
 
-  return res.status(200).send({});
-});
+//   return res.status(200).send({
+//     curso: "Master en react"
+//   });
+// });
 
-app.get("/", (req, res) => {
-  return res.status(200).send("<h1>Empezando a crear una api</h1>");
-});
+// app.get("/", (req, res) => {
+//   return res.status(200).send("<h1>Empezando a crear una api</h1>");
+// });
 
 //Crear servidor y escuchar peticiones http
 app.listen(puerto, () => {

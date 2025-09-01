@@ -1,21 +1,46 @@
+// const mongoose = require("mongoose");
+// require("dotenv").config();
+// const text = require("../text/textFile.json");
+
+// const conexion = async () => {
+  
+//   try {
+//     await mongoose.connect(`mongodb+srv://hugoloyolamaya:Azul1590.@cluster0.96adb.mongodb.net/verbs?retryWrites=true&w=majority&appName=Cluster0`, {});
+//     console.log(`${text.dataBase} ${url.substring(url.length - 8)}`);
+//   } catch (error) {
+//     console.log(error);
+//     throw new Error(`${text.errorConectionDB}`);
+//   }
+// };
+
+// module.exports = {
+//   conexion,
+// };
+
 const mongoose = require("mongoose");
 require("dotenv").config();
 const text = require("../text/textFile.json");
 
 const conexion = async () => {
-  const url = `mongodb+srv://${process.env.USER_DB}:${process.env.PASS_DB}@${process.env.SERVER_DB}/?retryWrites=true&w=majority&appName=Cluster0`;
   try {
-    await mongoose.connect(url, {});
-    console.log(`${text.dataBase} ${url.substring(url.length - 8)}`);
+    await mongoose.connect(
+      "mongodb+srv://hugoloyolamaya:88AD6rf5tUXz3Pob@cluster0.96adb.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0",
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      }
+    );
+
+    console.log(`${text.dataBase} conectada correctamente 🚀`);
   } catch (error) {
-    console.log(error);
+    console.error("❌ Error de conexión:", error.message);
     throw new Error(`${text.errorConectionDB}`);
   }
 };
 
-module.exports = {
-  conexion,
-};
+module.exports = { conexion };
+
+
 //Validadores
 
 //Authenticacion, revisar
@@ -25,3 +50,5 @@ module.exports = {
 //ventajas, desventajas
 //Memorias de cache
 //colas, que son ?
+
+
